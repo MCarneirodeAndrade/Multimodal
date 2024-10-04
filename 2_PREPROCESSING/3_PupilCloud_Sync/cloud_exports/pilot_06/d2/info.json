@@ -1,0 +1,39 @@
+{
+    "android_device_id": "efeb56fa962e9176",
+    "android_device_model": "NE2213EEA",
+    "android_device_name": "Neon Companion 1",
+    "app_version": "2.8.15-prod",
+    "calib_version": 1,
+    "data_format_version": "2.3",
+    "duration": 690892000000,
+    "firmware_version": [
+        24,
+        8
+    ],
+    "frame_id": "3",
+    "frame_name": "I can see clearly now",
+    "gaze_frequency": 200,
+    "gaze_offset": [
+        -24.416016,
+        -47.8125
+    ],
+    "module_serial_number": "930279",
+    "os_version": "14",
+    "pipeline_version": "2.7.0",
+    "recording_id": "43da8dc5-6df2-43ad-8fd2-2bc73b72d3cc",
+    "start_time": 1719927716115000000,
+    "template_data": {
+        "data": {
+            "230bcba4-2db2-430d-b1d7-c3bbc0858b8a": [
+                ""
+            ]
+        },
+        "id": "7223b841-491b-4590-a1f4-bdae0947b0cb",
+        "recording_name": "2024-07-02_15:41:56",
+        "version": "2024-04-19T13:34:08.338123Z"
+    },
+    "wearer_id": "e928b25b-12d3-4ac3-a457-43123b4a3fa1",
+    "wearer_ied": 63.0,
+    "wearer_name": "P_06",
+    "workspace_id": "172736f8-0492-40e5-a9a0-a640472cf850"
+}
