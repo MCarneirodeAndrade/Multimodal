@@ -9,6 +9,8 @@ It illustrates the following use cases:
 - online postprocessing
 """
 
+# Author: Wim Pouw
+
 import numpy as np
 import math
 import pylsl

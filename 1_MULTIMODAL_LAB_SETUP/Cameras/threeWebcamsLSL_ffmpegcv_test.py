@@ -1,3 +1,6 @@
+# Created by Sarka Kadava and Wim Pouw 
+
+
 import cv2
 import datetime
 from pylsl import StreamInfo, StreamOutlet, local_clock
