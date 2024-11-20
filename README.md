@@ -8,20 +8,22 @@
 
 ![Recording Setup](https://github.com/user-attachments/assets/6a710556-70a2-4fdf-b4e6-85c6a012ae84)
 
-<p>This repository provides the complete codebase for the multimodal measurement framework used to capture, preprocess, and analyze subtle avoidance behaviors in live exposure therapy (ET) sessions. The code is organized into three main sections covering setup, preprocessing, and data analysis.</p>
+<p>This repository provides the scripts for used in the SpeakUp2.0 Multimodal Labroatory used record, preprocess, and analyze subtle avoidance behaviors during a live exposure therapy (ET) sessions. 
+  The code is organized into three main sections: setup, preprocessing, and data analysis.</p>
 
 <hr>
 
 <h2>1. Multimodal Recording Setup</h2>
 <p>This section includes all scripts needed to set up and record synchronized multimodal data streams from different equipment using Lab Streaming Layer (LSL). Here, we collect real-time data from the following devices:</p>
 <ul>
-    <li><strong>3 Synced Video Recoridngs
-    <li><strong>Microphone:
-    <li><strong>Balance Board:
-    <li><strong>Eye Tracking
-    <li><strong>Physiological Sensors (ECG and EDA)
+    <li><strong> 3 Synced Video Recoridngs
+    <li><strong> Microphone
+    <li><strong> Balance Board:
+    <li><strong> Eye Tracking
+    <li><strong> Physiological Sensors (ECG and EDA)
  
-   
+  <p> You can see more informaton about each equipment (specs, prices, links, etc.) in the Multimodal Lab Equipment List .xlsx.</p>
+<ul> 
     
 </ul>
 <p>Each script configures and manages the integration of these devices with LSL for synchronized recording.</p>
