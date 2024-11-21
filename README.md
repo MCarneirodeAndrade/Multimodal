@@ -14,26 +14,26 @@
 <hr>
 
 <h2>1. Multimodal Recording Setup</h2>
-<p>This section includes all scripts needed to set up and record synchronized multimodal data streams from different equipment using Lab Streaming Layer (LSL). Here, we collect real-time data from the following devices:</p>
+<p>This section includes all the scripts needed to set up and record synchronized multimodal data streams from different equipment using the Lab Streaming Layer (LSL). In our setup, we used the following devices:</p>
 <ul>
-    <li><strong> 3 Synced Video Recoridngs
-    <li><strong> Microphone
-    <li><strong> Balance Board:
-    <li><strong> Eye Tracking
-    <li><strong> Physiological Sensors (ECG and EDA)
- 
-  <p> You can see more informaton about each equipment (specs, prices, links, etc.) in the Multimodal Lab Equipment List .xlsx.</p>
-<ul> 
-    
+    <li><strong>3 Synced Video Recordings</strong></li>
+    <li><strong>Microphone</strong></li>
+    <li><strong>Balance Board</strong></li>
+    <li><strong>Eye Tracking</strong></li>
+    <li><strong>Physiological Sensors (ECG and EDA)</strong></li>
 </ul>
-<p>Each script configures and manages the integration of these devices with LSL for synchronized recording.</p>
+<p>You can see more information about each piece of equipment (specs, prices, links, etc.) in the <strong>Multimodal Lab Equipment List.xlsx</strong>.</p>
+
 
 <h2>2. Preprocessing of Multimodal Signals</h2>
-<p>This section contains scripts to preprocess and synchronize the collected multimodal data, ensuring alignment and format consistency across datasets. Key processes include:</p>
+<p>This section contains scripts to preprocess the multimodal streams from the XDF unitary files (obtained from LSL), the raw videos and the raw eye tracking. This secton consists of:</p>
 <ul>
-    <li><strong>XDF Extraction:</strong> Converts raw data into XDF format for compatibility with further analysis steps.</li>
-    <li><strong>Audio-Video Alignment:</strong> Synchronizes audio with video data, ensuring speech patterns are accurately paired with body movements.</li>
-    <li><strong>Eye-Tracking Synchronization:</strong> Aligns gaze data with other data streams, providing precise temporal pairing for eye-tracking measurements.</li>
+    <li><strong>1_XDF_PROCESSING:</strong> Extract relevant data streams from XDF and convert it into a workable format (e.g., csv or wav).</li>
+    <li><strong>2_AUDIO_VIDEO_SYNC:</strong> Clipping the raw videos based on LSL times and synchronizing them with the relevant audios.</li>
+    <li><strong>3_PUPIL_CLOUD_EYE TRACKING SYNC</strong> Synchronizing the LSL eye tracking data with the Pupil Cloud Eye tracking uploads.</li>
+
+    ![Preprocessing overview](https://github.com/user-attachments/assets/dcd88c8d-bf64-4ed8-9d21-e698834e9a1f)
+
 
   
 </ul>
@@ -42,10 +42,10 @@
 <p>This section includes scripts to quantify and analyze subtle avoidance metrics across each recorded modality:</p>
 <ul>
     <li><strong>Quantification of Movements:</strong> Processes motion capture data to calculate frequency, duration, and extent of body movements.</li>
-    <li><strong>Speech Patterns Analysis:</strong> Analyzes vocal metrics, including volume, frequency, and extended silences, to identify speech patterns associated with SABs.</li>
-    <li><strong>Balance Board (CoP) Analysis:</strong> Computes CoP metrics from balance board data, quantifying postural sway and interpersonal distance.</li>
+    <li><strong>Speech Patterns Analysis:</strong> Analyzes vocal metrics, including volume, frequency, and extended silences, to identify relevant speech patterns.</li>
+    <li><strong>Balance Board (CoP) Analysis:</strong> Computes Centre of Pressure metrics from balance board data, quantifying postural sway and interpersonal distance from the audience.</li>
     <li><strong>Eye-Tracking Gaze Avoidance:</strong> Measures the duration and frequency of gaze fixations, particularly toward audience members, to assess gaze avoidance.</li>
-    <li><strong>Physiology (Heart Rate and Skin Conductance):</strong> Calculates heart rate and tonic skin conductance values, providing a physiological profile of arousal during exposure.</li>
+    <li><strong>Physiology (Heart Rate and Skin Conductance):</strong> Calculates heart rate and tonic skin conductance values from the ECG and EDA signals.</li>
 </ul>
 
 <hr>
