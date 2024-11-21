@@ -51,14 +51,143 @@
 <hr>
 
 <h2>Getting Started</h2>
-<p>Working in progress...</p>
+
+<h3> (1) Using ANACONDA (Beginner Friendly)</h3>
+<p>This method sets up the repository using <strong>Anaconda</strong> https://www.anaconda.com/download . This option is better for beginners or for managing dependencies in isolated virtual environments.</p> <p> You can comprehensive information on how to do this (alongside a user-friendly video) in the envision box "Getting Started" page: https://envisionbox.org/gettingstarted.html </p>
+
+<h4>Step 1: Install Anaconda</h4>
+<p>
+To get started, download and install Anaconda from the official <a href="https://www.anaconda.com/products/distribution">Anaconda website</a>. This installation includes Python, pip, and Jupyter Notebook, as well as the ability to create virtual environments.
+</p>
+
+<p>For more detailed installation instructions:</p>
+<ul>
+    <li><strong>Windows:</strong> Follow the guide <a href="https://docs.anaconda.com/anaconda/install/windows/">here</a>.</li>
+    <li><strong>MacOS/Linux:</strong> Follow the guide <a href="https://docs.anaconda.com/anaconda/install/linux/">here</a>.</li>
+</ul>
+
+<h4>Step 2: Install Git</h4>
+<p>Git is needed to clone the repository. Install Git by following the instructions:</p>
+<ul>
+    <li><strong>Windows:</strong> Use <a href="https://git-scm.com/">this guide</a> to install Git.</li>
+    <li><strong>MacOS/Linux:</strong> Git is often pre-installed. If not, follow <a href="https://git-scm.com/">this guide</a>.</li>
+</ul>
+
+<h4>Step 3: Clone the Repository</h4>
+<p>Open your terminal (or Anaconda Prompt on Windows) and navigate to the folder where you want to save the repository. Then run:</p>
+<pre><code>git clone https://github.com/DavAhm/SpeakUp2.0-Multimodal-Setup-Preprocessing-Analysis.git
+</code></pre>
+
+<h4>Step 4: Set Up the Environment</h4>
+<p>Create a virtual environment to isolate the project’s dependencies. First, navigate to the directory where you cloded in the GitHub Repository and then run the following commands in your terminal:</p>
+<pre><code>conda create --name myenv python=3.9
+conda activate myenv
+conda install pip
+</code></pre>
+
+<h4>Step 5: Install Dependencies</h4>
+<p>Navigate to the project folder and install the required dependencies (i.e., the required libraries and packages to run the scripts):</p>
+<pre><code>pip install -r requirements.txt
+</code></pre>
+
+<h4>Step 6: Run Jupyter Notebook</h4>
+<p>Start Jupyter Notebook in the project folder to explore the scripts:</p>
+<pre><code>jupyter notebook
+</code></pre>
+
+<h4>Step 6a: Run Jupyter Notebook in Visual Studio code</h4>
+<p>Alternatively, you can simply open each notebook in Visual Studio code and run in there using the Anaconda virtual environment as the intepreter following these instructions: https://docs.anaconda.com/working-with-conda/ide-tutorials/vscode/</p>
+
+<p>Open any <code>.ipynb</code> file in Jupyter Notebook to begin working with the repository.</p>
+
+
+<h3>(2) Using PIP  (Advanced and Lightweight)</h3>
+<p>This method sets up the repository using <strong>pip</strong> and the standard Python tools to create a virtual environment. This method is faster and more lightweight than Anaconda but assumes some familiarity with Python and terminal commands.</p>
+
+<h4>Step 1: Install Python and Pip</h4>
+<p>Make sure you have Python 3.9+ and pip installed on your system:</p>
+<ul>
+    <li><strong>Windows:</strong> Download Python from the official <a href="https://www.python.org/downloads/">Python website</a> and follow the installation instructions. Ensure you check the box to "Add Python to PATH" during installation.</li>
+    <li><strong>MacOS/Linux:</strong> Python is often pre-installed. Check your version using the command:
+        <pre><code>python3 --version</code></pre>
+        If needed, download Python from the <a href="https://www.python.org/downloads/">Python website</a>.
+    </li>
+</ul>
+
+<h4>Step 2: Install Git</h4>
+<p>Git is needed to clone the repository. Install Git by following these instructions:</p>
+<ul>
+    <li><strong>Windows:</strong> Use <a href="https://git-scm.com/">this guide</a> to install Git.</li>
+    <li><strong>MacOS/Linux:</strong> Git is often pre-installed. If not, follow <a href="https://git-scm.com/">this guide</a>.</li>
+</ul>
+
+<h4>Step 3: Clone the Repository</h4>
+<p>Open your terminal and navigate to the folder where you want to save the repository. Then run:</p>
+<pre><code>git clone https://github.com/DavAhm/SpeakUp2.0-Multimodal-Setup-Preprocessing-Analysis.git
+cd SpeakUp2.0-Multimodal-Setup-Preprocessing-Analysis
+</code></pre>
+
+<h4>Step 4: Create a Virtual Environment</h4>
+<p>Create a virtual environment to isolate the project’s dependencies. In your terminal, run:</p>
+<pre><code>python3 -m venv myenv
+</code></pre>
+<p>Activate the virtual environment:</p>
+<ul>
+    <li><strong>Windows:</strong>
+        <pre><code>myenv\Scripts\activate</code></pre>
+    </li>
+    <li><strong>MacOS/Linux:</strong>
+        <pre><code>source myenv/bin/activate</code></pre>
+    </li>
+</ul>
+
+<h4>Step 5: Install Dependencies</h4>
+<p>With the virtual environment activated, install the required dependencies for the project:</p>
+<pre><code>pip install -r requirements.txt
+</code></pre>
+
+<h4>Step 6: Run Jupyter Notebook</h4>
+<p>Start Jupyter Notebook in the project folder to explore the scripts:</p>
+<pre><code>jupyter notebook
+</code></pre>
+
+<p>Open any <code>.ipynb</code> file in Jupyter Notebook to begin working with the repository.</p>
+
+<h4>Step 6a: Run Jupyter Notebook in Visual Studio Code</h4>
+<p>Alternatively, you can open and run the Jupyter Notebook files in Visual Studio Code by following these instructions: <a href="https://code.visualstudio.com/docs/datascience/jupyter-notebooks">VS Code Jupyter Setup Guide</a>.</p>
+
+
+<h3>Troubleshooting</h3>
+<p>If you encounter any issues:</p>
+<ul>
+    <li>Make sure all dependencies are installed correctly by re-running <code>pip install -r requirements.txt</code>.</li>
+    <li>Check that your Python version is 3.9 or higher.</li>
+    <li>Ensure Jupyter Notebook is installed and properly configured.</li>
+    <li>Refer to the <a href="https://github.com/DavAhm/SpeakUp2.0-Multimodal-Setup-Preprocessing-Analysis/issues">Issues</a> page for common problems.</li>
+</ul>
 
 <h2>Dependencies</h2>
 <p>Refer to the <code>requirements.txt</code> file for a complete list of dependencies. Installation of required packages can be done using:</p>
 
 <pre><code>pip install -r requirements.txt</code></pre>
 
-<h2>License and Citation</h2>
+<p>Alèternatively, you can install each required packages individually inside your envirornment <p>
+<pre><code>conda install "name of library"</code></pre>
+or
+<pre><code>pip install "name of library" </code></pre>
+
+
+<h2>Citations</h2>
+<small>
+    <p><strong>Author:</strong> Davide Ahmar</p>
+    <p><strong>Contact:</strong> ahmar.davide@gmail.com</p>
+    <p><strong>Code Contributors:</strong></p>
+    <ul>
+        <li>Wim Pouw: wim.pouw@donders.ru.nl</li>
+        <li>Sarka Kadava: sarka.kadava@ru.nl</li>
+    </ul>
+</small>
+
 
 <hr>
 
