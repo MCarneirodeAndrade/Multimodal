@@ -1,0 +1,19 @@
+IPython
+aniposelib
+opencv-python  # For 'cv2'
+freemocap
+librosa
+lsl-relay
+matplotlib
+moviepy
+neurokit2
+noisereduce
+numpy
+pandas
+pathlib
+plotly
+pyxdf
+scipy
+pytest-shutil
+scikit-learn  # For 'sklearn'
+tqdm
