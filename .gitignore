@@ -2,5 +2,6 @@
 *.csv
 *.mp4
 *.wav
+*.jpg
 multimodal_venv/
 generate_venv.py
